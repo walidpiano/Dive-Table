@@ -1,0 +1,347 @@
+@font-face {
+    font-family: NeoTech;
+    src: url('../fonts/NeoTech Medium.otf');
+    font-weight: normal;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/*
+div {
+    border: 1px solid yellow;
+}
+*/
+
+body, html, main {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+nav, a, button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    background-image: url(../img/unser-water.jpg);
+    background-size: contain;
+    height: 100%;
+}
+
+#sub-background {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 22, 68, 0.6);
+}
+
+.first-row {
+    height: 60px;
+}
+
+.wide-column {
+    width: 20%;
+}
+
+.narrow-column {
+    width: 10%;
+}
+
+.second-row {
+    height: 60px;
+}
+
+.third-row {
+    height: 60px;
+}
+
+.fourth-row {
+    height: 60px;
+}
+
+.fifth-row {
+    height: 10px;
+}
+
+.sixth-row {
+    height: 50px;
+}
+
+.seventh-row {
+    height: 50px;
+}
+
+.eighth-row {
+    height: 50px;
+}
+
+#two-one {
+    border-top: 12px solid black;
+    border-right: 12px solid black;
+}
+
+#three-one {
+    border-right: 12px solid black;
+}
+
+#four-one {
+    border-right: 12px solid black;
+    padding: 0 10px;
+}
+
+#four-two {
+    border-bottom: 12px solid black;
+    border-right: 12px solid black;
+}
+
+#three-two {
+    border-right: 12px solid black;
+}
+
+#two-two {
+    border-right: 12px solid black;
+}
+
+#two-three {
+    border-top: 12px solid black;
+    border-right: 12px solid black;
+}
+
+#three-three {
+    border-right: 12px solid black;
+    padding: 0 10px;
+}
+
+#three-four {
+    border-bottom: 12px solid black;
+    border-right: 12px solid black;
+}
+
+#two-four {
+    border-right: 12px solid black;
+}
+
+#two-five {
+    border-top: 12px solid black;
+    border-right: 12px solid black;
+    padding: 0 10px;
+}
+
+#two-six {
+    border-bottom: 12px solid black;
+    border-right: 12px solid black;
+}
+
+#two-seven {
+    border-top: 12px solid black;
+}
+
+#one-one, #four-one, #three-three, #two-five {
+    position: relative;
+}
+
+#first-meters, #second-meters, #third-meters, #start-time {
+    padding: 10px;
+    text-align: center;
+    margin: auto 10px 0 0;
+    font-size: 15px;
+    position: absolute;
+    width: calc(100% - 20px);
+    bottom: 0;
+}
+
+#start-time {
+    width: calc(100% - 24px);
+    margin: auto 10px 10px 10px;
+}
+
+#one-three, #one-five, #one-seven {
+    position: relative;;
+}
+
+.top-inputs {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    margin: auto auto 10px 0;
+}
+
+.letter, .hour {
+    display: inline-block;
+    padding: 10px 1px;
+    text-align: center;
+    font-size: 15px;
+    width: 20%;
+}
+
+#fifth-letter {
+    width: 50%;
+}
+
+#five-one, #four-three, #five-four,
+#three-five, #four-six, #five-seven,
+#six-one {
+    border-right: 1px solid whitesmoke;
+}
+
+#five-two, #four-four, #five-five,
+#three-six, #four-seven, #five-eight,
+#six-two {
+    border-left: 1px solid whitesmoke;
+}
+
+.very-narrow {
+    width: 5%;
+}
+
+#seven-six, #seven-two {
+    border-left: 1px solid whitesmoke;
+}
+
+.very-wide {
+    width: 25%;
+}
+
+#seven-one, #seven-five {
+    border-right: 1px solid whitesmoke;
+}
+
+#esa-logo {
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 18px 10px 10px;
+    background: #081e6d;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    background: #081e6d;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}
+
+p {
+    display: inline-block;
+    margin: 0 auto;
+    color: wheat;
+    width: 100%;
+    text-align: center;
+    padding: 11px;
+}
+
+a {
+    color: white;
+}
+
+#header-container {
+    right: 0;
+    position: relative;
+    float: right;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-family: NeoTech;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 55px;
+}
+
+#six-one, #seven-one, #eight-one {
+    width: 10%;
+    border-right: 1px solid whitesmoke;
+}
+
+#six-two, #six-six, #six-ten,
+#seven-two, #seven-six, #seven-ten,
+#eight-two, #eight-six, #eight-ten {
+    width: calc(5% - 12px);
+    border-left: 1px solid whitesmoke;
+}
+
+#eight-two, #eight-six, #eight-ten {
+    border-bottom: 2px solid whitesmoke;
+}
+
+#six-three, #six-seven, #six-eleven,
+#seven-three, #seven-seven, #seven-eleven,
+#eight-three, #eight-seven, #eight-eleven {
+    width: 5%;
+    position: relative;
+}
+
+#six-four, #six-eight, #six-twelve,
+#seven-four, #seven-eight, #seven-twelve,
+#eight-four, #eight-eight, #eight-twelve {
+    width: calc(10% + 12px);
+}
+
+#six-five, #six-nine,
+#seven-five, #seven-nine,
+#eight-five, #eight-nine {
+    width: 10%;
+    border-right: 1px solid whitesmoke;   
+}
+
+#six-thirteen, #seven-thirteen, #eight-thirteen {
+    width: 10%;
+}
+
+.exact-fill {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    font-size: 15px;
+    bottom: 0;
+}
+
+.result-label {
+    padding: 10px 10px 0 0;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+}
+
+.last-row {
+    height: 70px;
+    width: 100%;
+}
+
+.letter {
+    border-radius: 10px;
+    background: #c6f8f8;
+    font-family: NeoTech;
+    padding: 4px 0 0 0;
+    height: 40px;
+    font-size: 27px;
+    text-align: center;
+    color: blue;
+    text-transform: capitalize
+}
