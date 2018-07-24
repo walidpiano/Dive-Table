@@ -169,10 +169,11 @@ header, nav, footer, section, article, div {
 #start-time {
     width: calc(100% - 24px);
     margin: auto 10px 10px 10px;
+    height: 42px;
 }
 
 #one-three, #one-five, #one-seven {
-    position: relative;;
+    position: relative;
 }
 
 .top-inputs {
@@ -180,18 +181,6 @@ header, nav, footer, section, article, div {
     position: absolute;
     bottom: 0;
     margin: auto auto 10px 0;
-}
-
-.letter, .hour {
-    display: inline-block;
-    padding: 10px 1px;
-    text-align: center;
-    font-size: 15px;
-    width: 20%;
-}
-
-#fifth-letter {
-    width: 50%;
 }
 
 #five-one, #four-three, #five-four,
@@ -334,14 +323,60 @@ h1 {
     width: 100%;
 }
 
+.letter, .hour {
+    display: inline-block;
+    height: 42px;
+    padding: 10px 1px;
+    text-align: center;
+    font-size: 15px;
+    width: 20%;
+}
+
 .letter {
     border-radius: 10px;
-    background: #c6f8f8;
+    background: #cfaaff;
     font-family: NeoTech;
-    padding: 4px 0 0 0;
-    height: 40px;
     font-size: 27px;
-    text-align: center;
     color: blue;
-    text-transform: capitalize
+    text-transform: capitalize;
+}
+
+#fifth-letter {
+    width: 40%;
+}
+
+.read-only {
+    background: #cfaaff;
+    border-radius: 10px;
+    color: blue;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 935px) {
+    .hour {
+        width: 22%;
+        margin: 0;
+    }
+
+    .letter {
+        width: 18%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #esa-logo {
+        width: 230px;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    #one-three {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
