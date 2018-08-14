@@ -9,16 +9,17 @@
     box-sizing: border-box;
 }
 
-/*
-div {
-    border: 1px solid yellow;
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
-*/
 
 body, html, main {
     margin: 0;
     padding: 0;
 }
+
 
 label {
     color: white;
@@ -35,20 +36,35 @@ header, nav, footer, section, article, div {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 10px auto;
+
+    margin: 5px auto;
     background-image: url(../img/unser-water.jpg);
     background-size: contain;
-    height: 100%;
+    max-width: 1100px;
+    border: 16px solid #0076BC;
+    border-radius: 40px;
+    height: 450px;
 }
+
 
 #sub-background {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 10px auto;
     width: 100%;
-    height: 100%;
     background: rgba(14, 22, 68, 0.6);
+    margin: auto;
+    border-radius: 20px;
+    border: 4px solid white;
+    padding: 10px 0;
+    height: 100%;
+}
+
+.separator {
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    margin: 2px 0;
 }
 
 .first-row {
@@ -68,27 +84,27 @@ header, nav, footer, section, article, div {
 }
 
 .third-row {
-    height: 60px;
+    height: 50px;
 }
 
 .fourth-row {
-    height: 60px;
+    height: 50px;
 }
 
 .fifth-row {
-    height: 10px;
+    height: 5px;
 }
 
 .sixth-row {
-    height: 50px;
+    height: 45px;
 }
 
 .seventh-row {
-    height: 50px;
+    height: 45px;
 }
 
 .eighth-row {
-    height: 50px;
+    height: 45px;
 }
 
 #two-one {
@@ -180,7 +196,18 @@ header, nav, footer, section, article, div {
     font-size: 20px;
     position: absolute;
     bottom: 0;
-    margin: auto auto 10px 0;
+    margin: auto;
+    padding-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rnt {
+    background: #4fc8dd;
+}
+
+.tbt {
+    background: #0076BC;
 }
 
 #five-one, #four-three, #five-four,
@@ -219,30 +246,86 @@ header, nav, footer, section, article, div {
 
 header {
     width: 100%;
-    padding: 10px 18px 10px 10px;
-    background: #081e6d;
+    padding: 6px 18px 10px 10px;
+    border: 3px solid #0076BC;
     border-radius: 20px;
+    height: 130px;
 }
 
 footer {
     width: 100%;
-    background: #081e6d;
-    height: 40px;
-    position: fixed;
-    bottom: 0;
+    height: 70px;
+    border: 2px solid #0076BC;
+    border-radius: 20px;
+
+}
+
+#footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+h3 {
+    font-size: 14px;
+    display: inline;
+    margin: auto auto auto 10px;
+}
+
+#footer-one {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+#footer-two {
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+    border: 2px solid #0076BC;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 12px 10px 10px 10px;
+
+
+}
+
+.footer-details {
+    font-size: 12px;
+}
+
+ul {
+    display: inline-block;
+
+}
+
+li {
+    display: inline-block;
+    font-size: 11px;
 }
 
 p {
     display: inline-block;
-    margin: 0 auto;
-    color: wheat;
+    margin: 0 auto ;
     width: 100%;
     text-align: center;
-    padding: 11px;
+}
+
+#warning {
+    margin: auto auto auto 95px;
+    text-align: left;
 }
 
 a {
-    color: white;
+    color: #0076BC;
+    font-family: Arial;
+    font-size: 16px;
 }
 
 #header-container {
@@ -253,11 +336,12 @@ a {
 }
 
 h1 {
-    color: white;
+    color: #0076BC;
     font-family: NeoTech;
-    font-weight: 100;
+    font-weight: bold;
     font-style: italic;
     font-size: 55px;
+    text-shadow: grey 1px 0 5px;
 }
 
 #six-one, #seven-one, #eight-one {
@@ -304,7 +388,7 @@ h1 {
     width: 100%;
     padding: 10px;
     text-align: center;
-    margin: 10px 10px 0 0;
+    margin: 5px 10px 0 0;
     font-size: 15px;
     bottom: 0;
 }
@@ -334,49 +418,215 @@ h1 {
 
 .letter {
     border-radius: 10px;
-    background: #cfaaff;
+    background: #0076BC;
     font-family: NeoTech;
-    font-size: 27px;
-    color: blue;
+    font-size: 32px;
+    color: white;
     text-transform: capitalize;
+    padding: 6px 0 0 0;
+    height: 50px;
+    margin: 4px;
 }
 
 #fifth-letter {
     width: 40%;
+    margin-bottom: 2px;
 }
 
 .read-only {
-    background: #cfaaff;
     border-radius: 10px;
-    color: blue;
     font-weight: bold;
+    font-size: 23px;
+    color: black;
+}
+
+.indications {
+    width: 45px;
+    height: 18px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 2px 0 10px;
+}
+
+#indication-one {
+    background: white;
+    border: 1px solid black;
+}
+
+#indication-two {
+    background: #4fc8dd;
+}
+
+#indication-three {
+    background: #0076BC;
 }
 
 
-@media screen and (max-width: 935px) {
-    .hour {
-        width: 22%;
-        margin: 0;
+@media screen and (max-width: 1035px) {
+    #footer-one {
+        width: 75%;
     }
 
-    .letter {
-        width: 18%;
+    #footer-two {
+        width: 220px;
+    }
+
+    li, #warning {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    li {
+        display: block;
+    }
+
+    #footer-one {
+        width: 70%;
+    }
+
+    footer {
+        height: 125px;
+    }
+
+    #footer-two {
+        margin-top: 40px;
+    }
+
+    #warning {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+
+    #first-hour, #second-hour {
+        width: 30%;
+        order: 1;
+        margin: 2px 2px 2px 12%;
+    }
+
+    .separator {
+        order: 2;
+    }
+
+    #first-letter, #third-letter {
+        width: 30%;
+        order: 4;
+        margin: 2px;
+    }
+
+    #fifth-letter {
+        width: 60%;
+        margin: 2px;
+    }
+
+    #second-letter, #fourth-letter {
+        width: 30%;
+        order: 5;
+        margin: 2px 2px 2px 30%;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 45px;
+        margin-top: 38px;
     }
 
-    #esa-logo {
-        width: 230px;
+    #first-minute, #second-minute {
+        width: 30%;
+        order: 3;
+        margin: 2px;
+    }
+
+    #one-one, #one-three, #one-five, #one-seven {
+        height: 100px;
+    }
+
+    #start-time {
+        margin-bottom: 33px;
+    }
+
+    .container {
+        height: 485px;
     }
 }
 
 
-@media screen and (max-width: 860px) {
-    #one-three {
-        padding: 0;
-        margin-left: 0;
-        margin-right: 0;
+@media screen and (max-width: 825px) {
+    #footer-one, #warning {
+        width: 67%;
+    }
+
+    #footer-two {
+        right: 10px;
+        width: 30%;
+    }
+
+    .exact-fill {
+        margin-left: 5px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    #footer-one, #warning {
+        width: 90%;
+    }
+
+    footer {
+        height: 170px;
+    }
+
+    #footer-two {
+        margin: 4px 10%;
+        width: 80%;
+    }
+
+    .exact-fill {
+        margin-left: 8px;
+    }
+
+    #esa-logo {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    header {
+        height: 110px;
+    }
+
+    #start-time, #first-meters,
+    #second-meters, #third-meters, .hour,
+      .result-label {
+        font-size: 13px;
+    }
+
+    #first-hour, #second-hour {
+        width: 35%;
+        margin: 2px 1px 2px 5%;
+    }
+
+    #first-letter, #third-letter {
+        width: 35%;
+        margin: 2px 1px;
+    }
+
+    #second-letter, #fourth-letter {
+        width: 35%;
+        margin: 2px 1px 2px 18%;
+    }
+
+    #first-minute, #second-minute {
+        width: 35%;
+        margin: 2px 1px;
+    }
+
+    #fifth-letter {
+        width: 70%;
     }
 }
