@@ -15,6 +15,18 @@ input::-webkit-outer-spin-button {
     margin: 0;
 }
 
+input::-moz-inner-spin-button,
+input::-moz-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::-ms-inner-spin-button,
+input::-ms-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 body, html, main {
     margin: 0;
     padding: 0;
@@ -510,6 +522,7 @@ h1 {
 
     .separator {
         order: 2;
+        margin: 5px 0;
     }
 
     #first-letter, #third-letter {
@@ -629,4 +642,226 @@ h1 {
     #fifth-letter {
         width: 70%;
     }
+
+    #start-time {
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;
+    }
+
+    #one-three, #one-five {
+        align-items: center;
+        justify-content: center;
+    }
+    .hour {
+        margin: 2px auto;
+    }
+
+    #first-minute, #second-minute {
+        margin-right: 10px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 10px;
+    }
+    ::-moz-placeholder {
+        font-size: 10px;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+    }
+
+    #first-meters, #second-meters,
+    #third-meters {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
 }
+
+
+@media screen and (max-width: 550px) {
+    .separator {
+        padding: 3px 1px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    header {
+        height: 100px;
+    }
+
+    #header-container {
+        padding: 0;
+    }
+
+    #esa-logo {
+        width: 170px;
+
+    }
+
+    h1 {
+        margin: 32px 0;
+        font-size: 30px;
+    }
+
+    #footer-one {
+        width: 85%;
+    }
+
+    #start-time, .abt, .rnt, .tbt {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 472px) {
+    .container {
+        border: 8px solid #0076BC;
+        border-radius: 25px;
+    }
+
+    .letter {
+        font-size: 27px;
+        width: 20%;
+    }
+
+    .rnt, .tbt {
+        font-size: 20px;
+    }
+
+    .hour {
+        margin: 0;
+    }
+
+    #two-one, #two-three, #two-five {
+        border-top: 9px solid black;
+        border-right: 9px solid black;
+    }
+
+    #two-two, #two-four, #three-one,
+    #three-two, #three-three, #four-one {
+        border-right: 9px solid black;
+    }
+
+    #two-seven {
+        border-top: 9px solid black;
+    }
+
+    #four-two, #two-six, #three-four {
+        border-bottom: 9px solid black;
+        border-right: 9px solid black;
+    }
+
+    .separator {
+        margin: 5px 0;
+    }
+
+    #one-two {
+        width: 8%;
+    }
+
+    #one-four, #one-six {
+        width: 6%;
+    }
+
+    #one-three, #one-five {
+        width: 24%;
+    }
+
+    #one-seven {
+        width: 12%;
+    }
+
+    #start-time {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #esa-logo {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    #esa-logo {
+        float: left;
+    }
+
+    #header-container {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0 auto;
+    }
+
+    header {
+        height: 130px;
+    }
+
+    #footer-one {
+        width: 100%;
+    }
+
+    #warning {
+        width: 70%;
+    }
+
+    #eight-five, #eight-nine, #eight-thirteen,
+    #seven-nine, #seven-thirteen,
+    #six-nine, #six-thirteen {
+        width: 8%;
+    }
+
+    #eight-three, #eight-seven, #eight-eleven,
+    #seven-seven, #seven-eleven,
+    #six-seven, #six-eleven {
+        width: 7%;
+    }
+
+    footer {
+        height: 185px;
+    }
+}
+
+
+@media screen and (max-width: 406px) {
+    footer {
+        height: 185px;
+    }
+
+    #one-two {
+        width: 6%;
+    }
+
+    #one-four, #one-six {
+        width: 2%;
+    }
+
+    #one-three, #one-five {
+        width: 28%;
+    }
+
+    #one-seven {
+        width: 14%;
+    }
+
+    #first-meters, #second-meters, #third-meters {
+        width: calc(100% - 6px);
+    }
+
+    #two-five, #three-three, #four-one {
+        padding: 3px;
+    }
+}
+

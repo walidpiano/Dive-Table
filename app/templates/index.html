@@ -9,6 +9,7 @@
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/main.js"></script>
 
+
 </head>
 <body>
     <header>
@@ -33,9 +34,9 @@
             <div id="one-three" class="first-row wide-column">
                 <div class="top-inputs">
                     <input id="first-letter" class="letter" type="text" tabindex="4" disabled value="A">
-                    <input id="first-hour" class="hour" type="number" tabindex="5">
+                    <input id="first-hour" class="hour" type="number" max="23" min="0" tabindex="5">
                     <div class="separator">:</div>
-                    <input id="first-minute" class="hour" type="number" tabindex="6">
+                    <input id="first-minute" class="hour" type="number" max="59" min="0" tabindex="6">
                     <input id="second-letter" class="letter" type="text" tabindex="7" disabled value="C">
                 </div>
             </div>
@@ -47,9 +48,9 @@
             <div id="one-five" class="first-row wide-column">
                 <div class="top-inputs">
                     <input id="third-letter" class="letter" type="text" tabindex="12" disabled value="A">
-                    <input id="second-hour" class="hour" type="number" tabindex="13">
+                    <input id="second-hour" class="hour" type="number" max="23" min="0" tabindex="13">
                     <div class="separator">:</div>
-                    <input id="second-minute" class="hour" type="number" tabindex="14">
+                    <input id="second-minute" class="hour" type="number" max="59" min="0" tabindex="14">
                     <input id="fourth-letter" class="letter" type="text" tabindex="15" disabled value="C">
                 </div>
             </div>
@@ -234,7 +235,7 @@
             </div>
     
             <div id="six-eight">
-                <input id="second-abt" type="number" class="exact-fill" tabindex="9">
+                <input id="second-abt" type="number" class="exact-fill abt" tabindex="9">
             </div>
     
             <div id="six-nine">
@@ -250,7 +251,7 @@
             </div>
     
             <div id="six-twelve">
-                <input id="third-abt" type="number" class="exact-fill" tabindex="17">
+                <input id="third-abt" type="number" class="exact-fill abt" tabindex="17">
             </div>
     
             <div id="six-thirteen">
@@ -324,7 +325,7 @@
             </div>
         
             <div id="eight-four">
-                <input id="first-abt" type="number" tabindex="3" class="exact-fill">
+                <input id="first-abt" type="number" tabindex="3" class="exact-fill abt">
             </div>
         
             <div id="eight-five">
@@ -387,7 +388,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 </html>
