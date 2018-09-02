@@ -53,7 +53,7 @@ header, nav, footer, section, article, div {
     background-image: url(../img/unser-water.jpg);
     background-size: contain;
     max-width: 1100px;
-    border: 16px solid #0076BC;
+    border: 16px solid #047B0D;
     border-radius: 40px;
     height: 450px;
 }
@@ -67,7 +67,7 @@ header, nav, footer, section, article, div {
     background: rgba(14, 22, 68, 0.6);
     margin: auto;
     border-radius: 20px;
-    border: 4px solid white;
+    border: 4px solid #FFD800;
     padding: 10px 0;
     height: 100%;
 }
@@ -217,11 +217,11 @@ header, nav, footer, section, article, div {
 }
 
 .rnt {
-    background: #4fc8dd;
+    background: #FFD800;
 }
 
 .tbt {
-    background: #0076BC;
+    background: #047B0D;
 }
 
 #five-one, #four-three, #five-four,
@@ -261,15 +261,16 @@ header, nav, footer, section, article, div {
 header {
     width: 100%;
     padding: 6px 18px 10px 10px;
-    border: 3px solid #0076BC;
+    border: 3px solid #047B0D;
     border-radius: 20px;
     height: 130px;
+    background: #F7F7F7;
 }
 
 footer {
     width: 100%;
-    height: 70px;
-    border: 2px solid #0076BC;
+    height: 83px;
+    border: 2px solid #047B0D;
     border-radius: 20px;
 }
 
@@ -296,7 +297,7 @@ h3 {
 
 .links {
     padding: 8px 0;
-    background: #0076BC;
+    background: #047B0D;
     border-radius: 10px;
     margin: 1px 10px;
     width: 30%;
@@ -304,7 +305,7 @@ h3 {
 }
 
 .nav-link {
-    color: white;
+    color: #FFD800;
     font-family: NeoTech;
     margin: 3px auto;
     height: 35px;
@@ -325,10 +326,11 @@ h3 {
     width: 25%;
     display: inline-block;
     text-align: left;
-    border: 2px solid #0076BC;
+    border: 2px solid #047B0D;
+    background: #FFD800;
     padding: 10px;
     border-radius: 10px;
-    margin: 12px 10px 10px 10px;
+    margin: 20px 10px 10px 10px;
 
 
 }
@@ -360,7 +362,7 @@ p {
 }
 
 #my-link {
-    color: #0076BC;
+    color: #047B0D;
     font-family: Arial;
     font-size: 16px;
 }
@@ -373,12 +375,12 @@ p {
 }
 
 h1 {
-    color: #0076BC;
+    color: #FFD800;
     font-family: NeoTech;
     font-weight: bold;
     font-style: italic;
     font-size: 55px;
-    text-shadow: grey 1px 0 5px;
+    text-shadow: #047B0D 2px 0 5px;
 }
 
 #six-one, #seven-one, #eight-one {
@@ -455,7 +457,7 @@ h1 {
 
 .letter {
     border-radius: 10px;
-    background: #0076BC;
+    background: #047B0D;
     font-family: NeoTech;
     font-size: 32px;
     color: white;
@@ -491,11 +493,11 @@ h1 {
 }
 
 #indication-two {
-    background: #4fc8dd;
+    background: #FFD800;
 }
 
 #indication-three {
-    background: #0076BC;
+    background: #047B0D;
 }
 
 
@@ -524,11 +526,11 @@ h1 {
     }
 
     footer {
-        height: 125px;
+        height: 130px;
     }
 
     #footer-two {
-        margin-top: 40px;
+        margin-top: 44px;
     }
 
     #warning {
@@ -608,7 +610,14 @@ h1 {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
+    footer {
+        height: 140px;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
     #footer-one, #warning {
         width: 90%;
     }
@@ -706,16 +715,24 @@ h1 {
     .links {
         width: 40%;
     }
-}
 
-
-@media screen and (max-width: 550px) {
-    .separator {
-        padding: 3px 1px;
+    footer {
+        height: 180px;
     }
 }
 
-@media screen and (max-width: 520px) {
+
+@media screen and (max-width: 580px) {
+    .separator {
+        padding: 3px 1px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
     header {
         height: 100px;
     }
@@ -748,7 +765,7 @@ h1 {
 
 @media screen and (max-width: 472px) {
     .container {
-        border: 8px solid #0076BC;
+        border: 8px solid #047B0D;
         border-radius: 25px;
     }
 
@@ -866,7 +883,7 @@ h1 {
 
 @media screen and (max-width: 406px) {
     footer {
-        height: 185px;
+        height: 195px;
     }
 
     #one-two {
@@ -899,3 +916,9 @@ h1 {
     }
 }
 
+
+@media screen and (max-width: 360px) {
+    footer {
+        height: 205px;
+    }
+}
