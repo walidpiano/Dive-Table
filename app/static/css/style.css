@@ -300,12 +300,13 @@ h3 {
     border-radius: 10px;
     margin: 1px 10px;
     width: 30%;
-    height: 35px;
+    height: 40px;
 }
 
 .nav-link {
     color: white;
     font-family: NeoTech;
+    font-size: 21px;
     margin: 3px auto;
     height: 35px;
     display: inline-block;
@@ -713,25 +714,27 @@ h1 {
     .separator {
         padding: 3px 1px;
     }
+
+    .nav-link {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 520px) {
-    header {
-        height: 100px;
-    }
 
     #header-container {
         padding: 0;
+        width: 100%;
     }
 
     #esa-logo {
         width: 170px;
-
+        float: left;
     }
 
     h1 {
-        margin: 32px 0;
         font-size: 30px;
+        margin: 0 auto;
     }
 
     #footer-one {
@@ -743,6 +746,33 @@ h1 {
         padding-right: 0;
     }
 
+    header {
+        height: 130px;
+    }
+
+    #footer-one {
+        width: 100%;
+    }
+
+    #warning {
+        width: 70%;
+    }
+
+    #eight-five, #eight-nine, #eight-thirteen,
+    #seven-nine, #seven-thirteen,
+    #six-nine, #six-thirteen {
+        width: 8%;
+    }
+
+    #eight-three, #eight-seven, #eight-eleven,
+    #seven-seven, #seven-eleven,
+    #six-seven, #six-eleven {
+        width: 7%;
+    }
+
+    footer {
+        height: 185px;
+    }
 }
 
 
@@ -821,49 +851,6 @@ h1 {
 }
 
 
-@media screen and (max-width: 520px) {
-    #esa-logo {
-        float: left;
-    }
-
-    #header-container {
-        width: 100%;
-    }
-
-    h1 {
-        margin: 0 auto;
-    }
-
-    header {
-        height: 130px;
-    }
-
-    #footer-one {
-        width: 100%;
-    }
-
-    #warning {
-        width: 70%;
-    }
-
-    #eight-five, #eight-nine, #eight-thirteen,
-    #seven-nine, #seven-thirteen,
-    #six-nine, #six-thirteen {
-        width: 8%;
-    }
-
-    #eight-three, #eight-seven, #eight-eleven,
-    #seven-seven, #seven-eleven,
-    #six-seven, #six-eleven {
-        width: 7%;
-    }
-
-    footer {
-        height: 185px;
-    }
-}
-
-
 @media screen and (max-width: 406px) {
     footer {
         height: 185px;
@@ -896,6 +883,10 @@ h1 {
     #footer-two {
         height: 30px;
         padding: 3px 0;
+    }
+
+    .nav-link {
+        font-size: 17px;
     }
 }
 
